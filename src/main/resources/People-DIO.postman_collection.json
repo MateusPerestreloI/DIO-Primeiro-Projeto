@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "7adb959f-8622-416f-a9c0-a5b310702deb",
+		"name": "People-DIO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Mateus\",\r\n    \"lastName\": \"I\",\r\n    \"cpf\": \"658.904.605-4\",\r\n    \"phones\": [\r\n        {\r\n            \"type\": \"MOBILE\",\r\n            \"number\": \"(11)956073015\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "htpp://localhost:8080/api/v1/people",
+					"protocol": "htpp",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"people"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
